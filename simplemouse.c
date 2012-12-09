@@ -2,6 +2,24 @@
 #include <stdlib.h>
 #include <fcntl.h>
 
+char *button(int code) {
+	static char n[10];
+	sprintf(n,"%d",code);
+	switch(code){
+		case 272:
+			return "left";
+			break;
+		case 273:
+			return "right";
+			break;
+		case 274:
+			return "middle";
+			break;
+		default:
+			return n;	
+	}
+}
+
 void main(){
  struct input_event {
      long sec;
@@ -11,12 +29,13 @@ void main(){
      unsigned  value;
    } ev[2];
  int rd,fd,i;
- if ((fd = open("/dev/input/event2", O_RDONLY)) < 0) {
+ char *state[]={"Up","Down"};
+ if ((fd = open("/dev/input/event7", O_RDONLY)) < 0) {
    perror("evtest");
    exit(-1);
  }
  
- 
+
  while(1) {
    printf("-----\n");
   rd = read(fd, ev, sizeof(struct input_event)*2);
@@ -24,7 +43,8 @@ void main(){
   if (rd < (int) sizeof(struct input_event)) {
     continue;
   }
-  printf("sec usec type code value %ld %ld %x %x %x\n",ev[0].sec, ev[0].usec,ev[0].type,ev[0].code,ev[0].value);
+  printf(" %ld.%ld  %s %s\n",
+			ev[0].sec, ev[0].usec/1000,button(ev[0].code),state[ev[0].value]);
  }
 }
 

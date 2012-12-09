@@ -1,4 +1,4 @@
-evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
+evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h \
  /usr/include/stdint.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -22,7 +22,7 @@ evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/ioctl-types.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h \
  /usr/include/i386-linux-gnu/sys/types.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h /usr/include/endian.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h /usr/include/endian.h \
  /usr/include/i386-linux-gnu/bits/endian.h \
  /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
@@ -33,7 +33,8 @@ evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
  /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
  /usr/include/linux/stddef.h \
  /usr/include/i386-linux-gnu/asm/posix_types.h \
- /usr/include/i386-linux-gnu/asm/posix_types_32.h /usr/include/string.h \
+ /usr/include/i386-linux-gnu/asm/posix_types_32.h \
+ /usr/include/asm-generic/posix_types.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/bits/string.h \
  /usr/include/i386-linux-gnu/bits/string2.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/string3.h /usr/include/fcntl.h \
@@ -45,13 +46,13 @@ evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/i386-linux-gnu/bits/unistd.h /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
  /usr/include/i386-linux-gnu/bits/stdio.h \
  /usr/include/i386-linux-gnu/bits/stdio2.h
 
-/usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h:
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -111,7 +112,7 @@ evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
 
 /usr/include/i386-linux-gnu/sys/types.h:
 
-/usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h:
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h:
 
 /usr/include/endian.h:
 
@@ -142,6 +143,8 @@ evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
 /usr/include/i386-linux-gnu/asm/posix_types.h:
 
 /usr/include/i386-linux-gnu/asm/posix_types_32.h:
+
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/string.h:
 
@@ -183,7 +186,7 @@ evtest.o: evtest.c /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h:
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h:
 
 /usr/include/i386-linux-gnu/bits/stdio_lim.h:
 
